@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Крестики_Нолики" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hPM-jC-Vye">
+                                <rect key="frame" x="5" y="129" width="310" height="310"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NIZ-xL-dPa">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Io0-PB-enX">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="HZh-En-9Va"/>
+                                                    <constraint firstAttribute="height" constant="100" id="N4j-vy-mep"/>
+                                                </constraints>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHT-LO-1UP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgZ-AT-b7R">
+                                                <rect key="frame" x="105" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="O1w-FT-3Y6"/>
+                                                    <constraint firstAttribute="width" constant="100" id="b93-iM-aI5"/>
+                                                </constraints>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSe-q4-oqI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qa-pM-nov">
+                                                <rect key="frame" x="210" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="36F-IM-QhR"/>
+                                                    <constraint firstAttribute="width" constant="100" id="FC0-vP-iq5"/>
+                                                </constraints>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fR9-tw-gYC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-Ip-gTk">
+                                        <rect key="frame" x="0.0" y="105" width="310" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpP-6C-Sj5">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="bLm-eS-dpb"/>
+                                                </constraints>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jk7-h7-caJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQ8-EQ-nXL">
+                                                <rect key="frame" x="105" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="8tX-zG-7tV"/>
+                                                    <constraint firstAttribute="height" constant="100" id="uvc-s9-Ia3"/>
+                                                </constraints>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p8e-Mg-vzs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAu-ME-3rr">
+                                                <rect key="frame" x="210" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2f-ZI-niP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LqK-GK-Y12">
+                                        <rect key="frame" x="0.0" y="210" width="310" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXB-Ac-Exa">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="9jK-jN-Fge"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Anq-0E-bCU"/>
+                                                </constraints>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Np0-KB-ow5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFx-TB-LPJ">
+                                                <rect key="frame" x="105" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pUf-VU-9bT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-wk-cYq">
+                                                <rect key="frame" x="210" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="F8D-61-2gr"/>
+                                                </constraints>
+                                                <state key="normal" image="xForTicTacToe.png"/>
+                                                <connections>
+                                                    <action selector="activeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ny4-sv-OP0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hPM-jC-Vye" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SrD-ie-x2J"/>
+                            <constraint firstItem="hPM-jC-Vye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sh3-ka-pZz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xForTicTacToe.png" width="340" height="340"/>
+    </resources>
+</document>
